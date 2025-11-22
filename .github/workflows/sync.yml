@@ -1,0 +1,128 @@
+name: Rule Set Update
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+  schedule:
+    - cron: '0 12 * * *'  # Daily at 12:00 UTC (20:00 Beijing Time)
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30  # Set timeout
+    permissions:
+      contents: write  # Allow repository push
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 1  # Shallow clone for faster checkout
+
+    - name: Setup sing-box
+      run: |
+        set -Eeuo pipefail
+        
+        echo "Adding sing-box repository..."
+        sudo curl -fsSL https://sing-box.app/gpg.key -o /etc/apt/keyrings/sagernet.asc
+        sudo chmod a+r /etc/apt/keyrings/sagernet.asc
+        echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/sagernet.asc] https://deb.sagernet.org/ * *" | \
+          sudo tee /etc/apt/sources.list.d/sagernet.list > /dev/null
+        
+        echo "Updating package list and installing sing-box..."
+        sudo apt-get update -qq
+        sudo apt-get install -y sing-box
+        
+        echo "Verifying installation..."
+        sing-box version
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    
+    - name: Install Python dependencies
+      run: pip install pandas requests pyyaml
+        
+    - name: Generate rule sets from links
+      env:
+        LINKS_FILE: ./links.txt
+        OUTPUT_DIR: ./rule
+      run: |
+        set -Eeuo pipefail
+        echo "Running rule set generation script..."
+        
+        # Check if links.txt exists
+        if [ ! -f "$LINKS_FILE" ]; then
+          echo "✗ Links file not found: $LINKS_FILE"
+          exit 1
+        fi
+        
+        echo "✓ Links file found: $LINKS_FILE ($(wc -l < "$LINKS_FILE") lines)"
+        mkdir -p "$OUTPUT_DIR"
+        
+        # Run script
+        python main.py
+
+    - name: Process AdGuard filter
+      run: |
+        set -Eeuo pipefail
+        URL="https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt"
+        OUTPUT_FILE="./rule/adservers.txt"
+        
+        echo "Downloading and converting AdGuard filter..."
+        if curl -fsSL --retry 3 --retry-delay 5 --max-time 60 "$URL" -o "$OUTPUT_FILE"; then
+          echo "✓ Download successful: $(wc -l < "$OUTPUT_FILE") lines"
+          sing-box rule-set convert --type adguard --output ./rule/adservers.srs "$OUTPUT_FILE"
+          echo "✓ Conversion successful"
+        else
+          echo "✗ Download failed"
+          exit 1
+        fi
+
+    - name: Display generated files
+      run: |
+        echo "Generated rule files summary:"
+        echo "=============================="
+        
+        # Function to count and display files
+        count_files() {
+          local dir=$1
+          local desc=$2
+          local json_count=$(find "$dir" -maxdepth 1 -name '*.json' 2>/dev/null | wc -l)
+          local srs_count=$(find "$dir" -maxdepth 1 -name '*.srs' 2>/dev/null | wc -l)
+          echo "  $desc: $json_count JSON, $srs_count SRS"
+        }
+        
+        count_files "./rule" "Main directory"
+        count_files "./rule/ip-cidr" "IP CIDR rules"
+        count_files "./rule/domain" "Domain rules"
+
+    - name: Commit and push changes
+      run: |
+        set -Eeuo pipefail
+        
+        # Configure Git
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        
+        # Clean up temporary files and add all rule files
+        find ./rule -name '_temp_*' -type f -delete 2>/dev/null || true
+        git add ./rule/
+        
+        # Check for changes
+        if git diff --staged --quiet; then
+          echo "ℹ No changes to commit"
+          exit 0
+        fi
+        
+        # Commit and push with statistics
+        echo "Changes to be committed:"
+        git diff --staged --stat
+        
+        TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+        git commit -m "chore: update rule sets - ${TIMESTAMP}"
+        git push
+        
+        echo "✓ Changes pushed successfully"
