@@ -37,6 +37,11 @@ https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-netflix
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Google/Google.list
 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-google.srs
 
+[YouTube]:
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/YouTubeMusic/YouTubeMusic.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/YouTube/YouTube.list
+https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-youtube.srs
+
 [Stream]:
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/GlobalMedia/GlobalMedia_All.list
 
@@ -81,5 +86,3 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master
 
 [GameDownload]
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Game/GameDownload/GameDownload.list
-
-
