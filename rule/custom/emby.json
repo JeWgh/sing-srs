@@ -1,0 +1,17 @@
+{
+  "rules": [
+    {
+      "domain": [
+        "stream.ntrrr.top",
+        "lite.cn2gias.uk",
+        "lite-v6.cn2gias.uk",
+        "pub1.emby.wtf",
+        "pub2.emby.wtf",
+        "pub3.emby.wtf",
+        "free3.28.al",
+        "jsq.vban.xyz"
+      ]
+    }
+  ],
+  "version": 2
+}
