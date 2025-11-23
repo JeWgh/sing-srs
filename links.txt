@@ -81,8 +81,9 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master
 [iCloud]:
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/iCloud/iCloud.list
 
-[Game]
+[Game]:
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Game/Game.list
 
-[GameDownload]
+[GameDownload]:
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Game/GameDownload/GameDownload.list
+
