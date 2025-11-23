@@ -1,0 +1,16 @@
+{
+  "rules": [
+    {
+      "domain_keyword": [
+        "apple-support.akadns.net",
+        "apple.com.akadns.net",
+        "apple.com.edgekey.net",
+        "buy.itunes.apple.com",
+        "icloud.com.akadns.net",
+        "smp-device",
+        "testflight"
+      ]
+    }
+  ],
+  "version": 2
+}
