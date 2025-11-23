@@ -13,21 +13,29 @@ https://raw.githubusercontent.com/QuixoticHeart/rule-set/refs/heads/master/custo
 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-cryptocurrency.srs
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Cryptocurrency/Cryptocurrency.list
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Crypto/Crypto.list
+https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-bybit.srs
 
 [ChinaMax]:
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/ChinaMax/ChinaMax_All.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Game/GameDownloadCN/GameDownloadCN.list
+https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-cn.srs
+https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-cn.srs
+https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-cn.srs
 
 [Cloudflare]:
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Cloudflare/Cloudflare.list
 
 [Telegram]:
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Telegram/Telegram.list
+https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-telegram.srs
 
 [Netflix]:
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Netflix/Netflix.list
+https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-netflix.srs
 
 [Google]:
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Google/Google.list
+https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-google.srs
 
 [Stream]:
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/GlobalMedia/GlobalMedia_All.list
@@ -37,3 +45,39 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master
 
 [BiliBili]:
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/BiliBili/BiliBili.list
+
+[Apple]:
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Apple/Apple.list
+
+[Ads]:
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Advertising/Advertising_All.list
+https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads-all.srs
+
+[NotAds]
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Direct/Direct.list
+
+[Reddit]:
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Reddit/Reddit.list
+https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-reddit.srs
+
+[AI]:
+https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-perplexity.srs
+https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-openai.srs
+https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-anthropic.srs
+
+[Wiki]:
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Wikipedia/Wikipedia.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Wikimedia/Wikimedia.list
+https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-wikimedia.srs
+
+[Onedrive]:
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/OneDrive/OneDrive.list
+
+[iCloud]:
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/iCloud/iCloud.list
+
+[Game]
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Game/Game.list
+
+[GameDownload]
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Game/GameDownload/GameDownload.list
