@@ -2,8 +2,7 @@
 # Format: [name]: followed by URL on next line
 
 [GFW]:
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Global/Global_All.list
-https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/gfw.txt
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Global/Global.list
 
 [Emby]:
 https://raw.githubusercontent.com/JeWgh/sing-srs/refs/heads/main/rule/custom/emby.json
@@ -11,58 +10,57 @@ https://raw.githubusercontent.com/JeWgh/sing-srs/refs/heads/main/rule/custom/emb
 [Crypto]:
 https://raw.githubusercontent.com/QuixoticHeart/rule-set/refs/heads/master/custom/crypto.list
 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-cryptocurrency.srs
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Cryptocurrency/Cryptocurrency.list
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Crypto/Crypto.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Cryptocurrency/Cryptocurrency.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Crypto/Crypto.list
 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-bybit.srs
 
 [ChinaMax]:
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/ChinaMax/ChinaMax_All.list
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Game/GameDownloadCN/GameDownloadCN.list
-https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-cn.srs
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/ChinaMax/ChinaMax.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN.list
 https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-cn.srs
 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-cn.srs
 
 [Cloudflare]:
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Cloudflare/Cloudflare.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Cloudflare/Cloudflare.list
 
 [Telegram]:
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Telegram/Telegram.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Telegram/Telegram.list
 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-telegram.srs
 
 [Netflix]:
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Netflix/Netflix.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Netflix/Netflix.list
 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-netflix.srs
 
 [Google]:
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Google/Google.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Google/Google.list
 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-google.srs
 
 [YouTube]:
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/YouTubeMusic/YouTubeMusic.list
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/YouTube/YouTube.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/YouTubeMusic/YouTubeMusic.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/YouTube/YouTube.list
 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-youtube.srs
 
 [Stream]:
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/GlobalMedia/GlobalMedia_All.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/GlobalMedia/GlobalMedia.list
 
 [WeChat]:
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/WeChat/WeChat.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/WeChat/WeChat.list
 
 [BiliBili]:
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/BiliBili/BiliBili.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/BiliBili/BiliBili.list
 
 [Apple]:
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Apple/Apple_All.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Apple/Apple.list
 
 [Ads]:
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Advertising/Advertising_All.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Advertising/Advertising.list
 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads-all.srs
 
 [NotAds]:
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Direct/Direct.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Direct/Direct.list
 
 [Reddit]:
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Reddit/Reddit.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Reddit/Reddit.list
 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-reddit.srs
 
 [AI]:
@@ -71,19 +69,18 @@ https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-openai.
 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-anthropic.srs
 
 [Wiki]:
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Wikipedia/Wikipedia.list
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Wikimedia/Wikimedia.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Wikipedia/Wikipedia.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Wikimedia/Wikimedia.list
 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-wikimedia.srs
 
 [Onedrive]:
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/OneDrive/OneDrive.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OneDrive/OneDrive.list
 
 [iCloud]:
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/iCloud/iCloud.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/iCloud/iCloud.list
 
 [Game]:
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Game/Game.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Game/Game.list
 
 [GameDownload]:
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Game/GameDownload/GameDownload.list
-
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Game/GameDownload/GameDownload.list
