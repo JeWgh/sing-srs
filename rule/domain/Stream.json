@@ -71,11 +71,6 @@
       ]
     },
     {
-      "domain_regex": [
-        "^https?:\\/\\/www\\.amazon\\.com\\/(Amazon-Video|gp\\/video)\\/"
-      ]
-    },
-    {
       "domain_suffix": [
         "112263.com",
         "20thcenturystudios.com.au",
