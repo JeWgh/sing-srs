@@ -69,7 +69,7 @@ jobs:
       run: |
         set -Eeuo pipefail
         URL="https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt"
-        OUTPUT_FILE="./rule/adservers.txt"
+        OUTPUT_FILE="./rule/Advertising.txt"
         
         echo "Downloading and converting AdGuard filter..."
         if curl -fsSL --retry 3 --retry-delay 5 --max-time 60 "$URL" -o "$OUTPUT_FILE"; then
